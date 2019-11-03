@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+
+body {
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+    margin: 0;
+}
+
+div.App {
+    display: flex;
+    justify-content: space-between;
+}
