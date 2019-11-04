@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 import styled from 'styled-components';
 
+import logo from '../logo.png'
+
 import '../App.scss';
 
 const Nav = styled.nav `
@@ -75,11 +77,33 @@ const ContentDetail = styled(Link) `
 
 const InfoNav = styled.nav `
     width: 400px;
+    min-width: 400px;
     height: 100vh;
     background-color: #f7f7f7;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
     float: right;    
 `;
+
+const InfoNavHeader = styled.div `
+    width: 400px;
+    height: 300px;    
+`
+
+const InfoNavTitleBox = styled.div `
+    width: 100%;
+    height: 55px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+`
+
+
+const InfoNavMainImg = styled.img `
+    width: 400px;
+    height: auto;
+    background: white;
+`
 
 const ToLink = styled(Link) `
     color: #6fb8f7;
@@ -118,7 +142,12 @@ function Main() {
                 </ContentFooter>  */}
             </Content>
             <InfoNav>
-                123
+                <InfoNavHeader>
+                    <InfoNavTitleBox>
+                        전략적 팀 전투
+                    </InfoNavTitleBox>
+                    <InfoNavMainImg src={logo} />
+                </InfoNavHeader>
             </InfoNav>
         </div>
     );
